@@ -1,0 +1,76 @@
+html, body {
+  height: 100%; /* Ensure both html and body occupy full height */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Now this works because html also has 100% height */
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+li.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+li.wrong {
+  background-color: #f44436;
+  color: white;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.btn:hover:enabled {
+  background-color: #0056b3;
+}
